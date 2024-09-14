@@ -46,4 +46,9 @@ java_library {
         "//external/apache-velocity-engine",
         "//packages/modules/OnDevicePersonalization:__subpackages__",
     ],
+    errorprone: {
+        javacflags: [
+            "-Xep:ReturnValueIgnored:WARN",
+        ],
+    },
 }
